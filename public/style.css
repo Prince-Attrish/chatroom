@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    background: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 800px;
+    max-width: 95%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.brand {
+    padding: 1rem;
+    background: #cac9c9;
+    display: flex;
+    align-items: center;
+}
+
+.brand h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #444;
+    margin-left: 10px;
+}
+
+.messageBody {
+    height: 75dvh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+.messageBody::-webkit-scrollbar {
+    width: 9px;
+}
+
+.messageBody::-webkit-scrollbar-thumb {
+    background: rgba(112, 122, 122, 0.3);
+    border-radius: 999px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1.2rem;
+    font-size: 1rem;
+    background: #e0e0e0dc;
+    resize: none;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming {
+    margin-right: auto;
+    background: #8f88e8;
+    color: #fff;
+}
+
+.outgoing {
+    margin-left: auto;
+    background: #e9eafd;
+    color: #787986;
+}
+
+.message h4 {
+    position: absolute;
+    top: -20px;
+    color: #333;
+    font-size: 14px;
+}
+
+.message.incoming h4 {
+    left: 0;
+}
+.message.outgoing h4 {
+    right: 0;
+}
